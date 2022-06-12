@@ -9,15 +9,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatibile" content="ie-eadge" />
     </head>
-    <div id="background">
-        <form target="blank" action="/index.html">
-            <label for="uname">Username:</label>
-            <input type="text" id="uname" name="uname" required><br>
-            <label for="pwd">Password:</label>
-            <input type="password" id="pwd" name="pwd" required><br>
-            <input type="button" onclick="location.href = 'index.html'" value="Submit"><br>
-            <input type="button" onclick="location.href = 'register.html'" value="Register"><br>
-            <input type="button" onclick="location.href = 'index.html'" value="Back">
-        </form>
-    </div>
+    <body>
+        <div id="background">
+            <form id = "login" name = "login" action="/script.js">
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" name="uname" required><br>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd" required><br>
+                <input type="submit" value="Submit"><br>
+                <input type="button" onclick="location.href = 'register.html'" value="Register"><br>
+                <input type="button" onclick="location.href = 'index.html'" value="Back">
+            </form>
+        </div>
+        <script src="login.js"></script>
+    </body>
 </html>

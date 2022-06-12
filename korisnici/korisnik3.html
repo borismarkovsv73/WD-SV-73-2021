@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Theatrical Plays</title>
+        <link rel="stylesheet" href="../index.css">
+        <script src="https://kit.fontawesome.com/0a8e6fb9c4.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="../assets/theater.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatibile" content="ie-eadge" />
+    </head>
+    <body>
+        <header>
+            <p class="welcome_subtext">Welcome to</p>
+            <h1><span class="extra_important">THEATRICAL</span></h1>
+            <p class="welcome_subtext">All your favourite theaters in one place</p>
+            <button><i class="fa-solid fa-envelope"></i> MAKE YOUR RESERVATION</button>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><i class="fa-solid fa-masks-theater"></i> HOME</a></li>
+                <li><a href="../admin.html">ADMIN TOOLS</a></li>
+                <li><a href="../login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+        <br><br>
+        <div id="inside"></div>
+        <div id="wrap">
+            <button id="edit" onclick="toggle()">EDIT (TOGGLE)</button>
+        </div>
+        <br>
+        <div id="wrap">
+            <form id="editKorisnik" target="korisnik1.js" action="korisnik1.html" style="display:none;height: auto;;background-color: rgb(202, 94, 44);">
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" name="uname" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="lname">Lastname:</label>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="birthdaytime">Birthday:</label>
+                <input type="date" id="birthdaytime" name="birthdaytime"><br>
+                <label for="add">Address:</label>
+                <input type="text" id="add" name="add"><br>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"><br><br>
+                <input type="submit" value="Submit">
+                <input id="remove" type="button" value="Delete"><br><br><br>
+            </form>
+        </div>
+        <script src="korisnik3.js"></script>
+    </body>
+</html>

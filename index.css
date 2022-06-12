@@ -41,7 +41,7 @@ h1{
 h2{
     font-size: 5vh;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     background-color: rgb(35, 38, 87);
     padding: 10px 15px 10px 15px;
 }
@@ -51,7 +51,7 @@ h3{
     font-weight: normal;
     text-align: center;
     background-color: rgb(82, 87, 163);
-    padding: 10px 15px 10px;
+    padding: 15px 15px;
 }
 
 h4{
@@ -154,10 +154,11 @@ nav ul li a:hover{
 }
 
 .about_play{
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: whitesmoke;
     background-color: rgb(35, 38, 87);
-    padding: 1vh;
+    padding: 0vh 3vh;
+    line-height: 3vh;
 }
 
 .playcode{
@@ -175,13 +176,12 @@ nav ul li a:hover{
 }
 
 #wrap{
-    margin-top: 3%;
-    display: block;
+    display: inline-block;
     margin-bottom: 2%;
 }
 
 #center_everything{
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
 
@@ -201,113 +201,56 @@ nav ul li a:hover{
 #left_about{
     box-sizing: border-box;
     background-image: url(assets/aboutus.jpeg);
-    background-position: right;
+    background-position: center;
     background-size: cover;
     display: inline-block;
-    min-width: 550px;
+    vertical-align: top;
+    min-width: 620px;
     width: 40%;
-    height: 63vh;
+    height: 130vh;
+    padding: 5vh;
 }
 
 #left_play{
     box-sizing: border-box;
-    background-image: url(assets/romeo.jpg);
     background-position: center;
     background-size: cover;
     display: inline-block;
-    min-width: 550px;
+    vertical-align: top;
+    min-width: 620px;
     width: 40%;
-    height: 63vh;
-}
-
-#left_user{
-    box-sizing: border-box;
-    background-image: url(assets/pfp.jpg);
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    min-width: 550px;
-    width: 40%;
-    height: 63vh;
+    height: 130vh;
+    padding: 5vh;
 }
 
 #right{
     box-sizing: border-box;
-    vertical-align: top;
     display: inline-block;
+    vertical-align: top;
     background-color: rgb(82, 87, 163);
-    min-width: 590px;
-    width: 41%;
-    height: 63vh;
+    min-width: 620px;
+    width: 40%;
+    height: 130vh;
     padding: 5vh;
 }
 
-.theaters{
+#theaters{
     background-color: rgb(202, 94, 44);
     padding: 5%;
-}
-
-.town{
     display: grid;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
 }
 
 .theater{
-    background-color: rgb(103, 110, 206) ;
+    background-color: rgb(103, 110, 206);
     padding: 2%;
-    margin: 2vh 2vh;
+    margin: 2vh;
     display: inline-block;
+    min-width: 250px;
 }
 
-.pic1{
-    background-image: url(assets/theater1.jpg);
-    background-position: center;
-    background-size: cover;
-    filter: grayscale(0.5);
-    height: 40vh;
-    width: auto;
-}
-
-.pic2{
-    background-image: url(assets/theater2.jpg);
-    background-position: center;
-    background-size: cover;
-    filter: grayscale(0.5);
-    height: 40vh;
-    width: auto;
-}
-
-.pic3{
-    background-image: url(assets/theater3.jpeg);
-    background-position: center;
-    background-size: cover;
-    filter: grayscale(0.5);
-    height: 40vh;
-    width: auto;
-}
-
-.pic4{
-    background-image: url(assets/theater4.jpg);
-    background-position: center;
-    background-size: cover;
-    filter: grayscale(0.5);
-    height: 40vh;
-    width: auto;
-}
-
-.pic5{
-    background-image: url(assets/theater5.jpg);
-    background-position: center;
-    background-size: cover;
-    filter: grayscale(0.5);
-    height: 40vh;
-    width: auto;
-}
-
-.pic6{
-    background-image: url(assets/theater6.jpg);
+.pic{
     background-position: center;
     background-size: cover;
     filter: grayscale(0.5);
@@ -325,11 +268,11 @@ footer{
 
 form{
     margin: auto;
-    height: 90vh;
     padding-top: 10vh;
     padding-right: 40%;
     padding-left: 24%;
     text-align: right;
+    height: 90vh;;
 }
 
 label{

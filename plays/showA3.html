@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Theatrical Plays</title>
+        <link rel="stylesheet" href="../index.css">
+        <script src="https://kit.fontawesome.com/0a8e6fb9c4.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="../assets/theater.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatibile" content="ie-eadge" />
+    </head>
+    <body>
+        <header>
+            <p class="welcome_subtext">Welcome to</p>
+            <h1><span class="extra_important">THEATRICAL</span></h1>
+            <p class="welcome_subtext">All your favourite theaters in one place</p>
+            <button><i class="fa-solid fa-envelope"></i> MAKE YOUR RESERVATION</button>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><i class="fa-solid fa-masks-theater"></i> HOME</a></li>
+                <li><a href="../admin.html">ADMIN TOOLS</a></li>
+                <li><a href="../login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+        <br><br>
+        <div id="inside"></div>
+        <div id="wrap">
+            <button><a href="../login.html">BUY TICKET</a></button>
+            <button id="edit" onclick="toggle()">EDIT (TOGGLE)</button>
+        </div>
+        <br>
+        <div id="wrap">
+            <form id="editShow" target="show1.js" action="/show.html" style="display:none;height: auto;;background-color: rgb(202, 94, 44);">
+                <label for="name">Title:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="code">Code:</label>
+                <input type="text" id="code" name="code" required><br>
+                <label for="disc">Short Discrpiton:</label>
+                <textarea id="disc" name="disc"></textarea><br>
+                <label for="len">Length:</label>
+                <input type="text" id="len" name="len" required><br>
+                <label for="gen">Genre:</label>
+                <input type="text" id="gen" name="gen" required><br>
+                <label for="disc">Longer Discrpiton:</label>
+                <textarea id="longdisc" name="longdisc"></textarea><br>
+                <label for="price">Ticket Price:</label>
+                <input type="text" id="price" name="price" required><br>
+                <label for="nopep">Number of Seats:</label>
+                <input type="text" id="nopep" name="nopep" required><br>
+                <label for="img">Image:</label>
+                <input type="text" id="img" name="img"><br><br>
+                <input type="submit" value="Submit"><br>
+                <input id="delete" type="button" value="Delete"><br>
+                <div id="box"></div>
+            </form>
+        </div>
+        <script src="showA3.js"></script>
+    </body>
+</html>

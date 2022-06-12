@@ -2,34 +2,37 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Theatrical - Login</title>
+        <title>Theatrical - Register</title>
         <link rel="stylesheet" href="index.css">
         <script src="https://kit.fontawesome.com/0a8e6fb9c4.js" crossorigin="anonymous"></script>
         <link rel="icon" type="image/png" href="assets/theater.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatibile" content="ie-eadge" />
     </head>
-    <div id="background">
-        <form target="blank" action="/index.html">
-            <label for="uname">Username:</label>
-            <input type="text" id="uname" name="uname" required><br>
-            <label for="pwd">Password:</label>
-            <input type="password" id="pwd" name="pwd" required><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="lname">Lastname:</label>
-            <input type="text" id="lname" name="lname" required><br>
-            <label for="birthdaytime">Birthday:</label>
-            <input type="date" id="birthdaytime" name="birthdaytime"><br>
-            <label for="add">Address:</label>
-            <input type="text" id="add" name="add"><br>
-            <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone"><br>
-            <input type="button" onclick="location.href = 'index.html'" value="Submit"><br>
-            <input type="button" onclick="location.href = 'login.html'" value="Login"><br>
-            <input type="button" onclick="location.href = 'index.html'" value="Back"><br>
+    <body>
+        <div id="background">
+            <form id = 'register' name = 'register' target="blank" action="/index.html">
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" name="uname" required><br>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="lname">Lastname:</label>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="birthdaytime">Birthday:</label>
+                <input type="date" id="birthdaytime" name="birthdaytime"><br>
+                <label for="add">Address:</label>
+                <input type="text" id="add" name="add"><br>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"><br>
+                <input type="submit" id="registerBTN" value="Submit"><br>
+                <input type="button" onclick="location.href = 'login.html'" value="Login"><br>
+                <input type="button" onclick="location.href = 'index.html'" value="Back"><br>
+            </form>
         </div>
-    </form>
+        <script src="register.js"></script>
+    </body>
 </html>
